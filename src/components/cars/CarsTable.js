@@ -86,13 +86,21 @@ const CarsTable = () => {
 	if (!carsList) return <Loading />;
 
 	return (
-		<Table
-			rowClassName='cursor-pointer'
-			dataSource={carsList}
-			columns={columns}
-			bordered
-			rowKey='id'
-		/>
+		<>
+			<Link to='/cars/create'>
+				<p className='font-medium cursor-pointer text-md hover:text-green-600'>
+					{'+ افزودن خودرو جدید'}
+				</p>
+			</Link>
+			<Table
+				rowClassName='cursor-pointer'
+				dataSource={carsList}
+				columns={columns}
+				bordered
+				rowKey='id'
+				scroll={{ x: 400 }}
+			/>
+		</>
 	);
 };
 

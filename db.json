@@ -1,28 +1,16 @@
 {
   "cars": [
     {
-      "id": "615d90a66fcf1e30f038a4d4",
-      "tipID": "9412",
-      "tip": "تریلر چادری ولوو اف ۱۲",
-      "systemID": "141",
-      "brandID": "305",
-      "brand": "ولوو",
-      "noeVasilehID": "3",
-      "zarfiat": "2",
-      "createdAt": "2021-10-19T21:11:12.189Z",
-      "updatedAt": "2021-10-19T21:11:12.189Z"
-    },
-    {
       "id": "615d90a66fcf1e30f038a4d5",
-      "tipID": "9422",
+      "tipID": 9425,
       "tip": "کمپرسی ماک",
       "systemID": "26",
       "brandID": "22",
-      "brand": "ماک",
+      "brand": "ماک 2",
       "noeVasilehID": "3",
       "zarfiat": "2",
       "createdAt": "2021-10-19T21:11:12.195Z",
-      "updatedAt": "2021-10-19T21:11:12.195Z"
+      "updatedAt": "2021-11-29T11:58:40.228Z"
     },
     {
       "id": "615d90a66fcf1e30f038a4d6",
@@ -1187,6 +1175,18 @@
       "zarfiat": "4",
       "createdAt": "2021-10-19T21:11:12.587Z",
       "updatedAt": "2021-10-19T21:12:52.442Z"
+    },
+    {
+      "tipID": 2,
+      "systemID": 2342,
+      "brand": "rfsdfasd",
+      "zarfiat": 2342,
+      "tip": "asdfasdfasf",
+      "brandID": 2,
+      "noeVasilehID": 2342,
+      "createdAt": "2026-11-25T11:57:05.738Z",
+      "updatedAt": "2021-11-29T11:57:27.347Z",
+      "id": "ZRZIxqt"
     }
   ]
 }

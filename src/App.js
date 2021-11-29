@@ -7,6 +7,7 @@ import Desc from './components/pages/Desc';
 import Cars from './components/pages/Cars';
 import CarDetail from './components/cars/CarDetail';
 import EditCar from './components/cars/EditCar';
+import CreateCar from './components/cars/CreateCar';
 
 function App() {
 	return (
@@ -19,6 +20,9 @@ function App() {
 						</Route>
 						<Route exact path='/cars/detail'>
 							<CarDetail />
+						</Route>
+						<Route exact path='/cars/create'>
+							<CreateCar />
 						</Route>
 						<Route exact path='/cars/edit'>
 							<EditCar />
