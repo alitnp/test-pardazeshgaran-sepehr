@@ -30,7 +30,7 @@ const CarsTable = () => {
 
 	const actionCelElement = (item) => {
 		return (
-			<div className='flex text-black'>
+			<div className='flex text-black' key={item.id}>
 				<Link to={'/cars/detail?id=' + item.id} className='mx-1'>
 					<EyeOutlined style={{ color: 'black' }} />
 				</Link>
@@ -46,9 +46,9 @@ const CarsTable = () => {
 
 	const columns = [
 		{
-			title: '',
+			title: 'actions',
 			dataIndex: '',
-			key: '',
+			key: 'actions',
 			render: actionCelElement,
 		},
 		{
@@ -91,6 +91,7 @@ const CarsTable = () => {
 			dataSource={carsList}
 			columns={columns}
 			bordered
+			rowKey='id'
 		/>
 	);
 };

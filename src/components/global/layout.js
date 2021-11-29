@@ -7,11 +7,14 @@ import {
 	MenuFoldOutlined,
 	MenuUnfoldOutlined,
 } from '@ant-design/icons';
+import { useLocation } from 'react-router';
 
 const { Sider, Header, Content } = Layout;
 
 const WrapperLayout = ({ children }) => {
 	const [collapse, setCollapse] = useState(false);
+
+	const { pathname } = useLocation();
 
 	return (
 		<Layout>
@@ -29,7 +32,7 @@ const WrapperLayout = ({ children }) => {
 				<div className='logo' />
 				<Menu
 					mode='inline'
-					defaultSelectedKeys={['1']}
+					defaultSelectedKeys={pathname.endsWith('cars') ? ['2'] : ['1']}
 					style={{ paddingTop: '4rem', position: 'sticky', top: '0' }}
 				>
 					<Menu.Item

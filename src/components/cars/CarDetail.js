@@ -29,7 +29,7 @@ const CarDetail = (props) => {
 		<ContentWrapper>
 			<PageTitle title='اطلاعات خودرو' />
 			{Object.keys(carDetail).map((key) => (
-				<ShowInfo right={key} left={carDetail[key]} />
+				<ShowInfo right={key} left={carDetail[key]} key={key} />
 			))}
 			<div className='flex justify-end mt-6'>
 				<Link to='/cars'>
